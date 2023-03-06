@@ -33,13 +33,14 @@ export const Nav = styled.button`
     background-color: transparent;
     outline: none;
     border: 1px solid transparent;
-    padding: .8rem;
+    padding: .4rem .8rem;
     font-size: 3.2rem;
     color: ${props => props.theme.text};
     cursor: pointer;
     transition: var(--transition);
 
     &:hover {
-        scale: var(--scale)
+        scale: var(--scale);
+        border-bottom: 1px solid ${props => props.theme.text};
     }
 `

@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.section`
     width: 100%;
     max-width: 80%;
-    margin: 0 auto;
+    margin: 2.4rem auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,7 +15,7 @@ export const TextWrapper = styled.div`
     align-items: center;
     justify-content: center;
     width: 49rem;
-    padding-bottom: 12rem;
+    height: 20rem;
     color: ${props => props.theme.text};
 `
 
@@ -42,5 +42,6 @@ export const ImageBig = styled.img`
 
 export const ImageSmall = styled.img`
     width: 20rem;
-    border-radius: 20rem;
+    height: 20rem;
+    border-radius: 100%;
 `

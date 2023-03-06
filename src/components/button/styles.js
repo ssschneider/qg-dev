@@ -23,7 +23,8 @@ export const Btn = styled.button`
     cursor: pointer;
     animation: ${pulsate} 1s ease-in-out infinite both;
     transition: var(--transition);
-    margin-top: 2.4rem;
+    margin: 2.4rem auto;
+    max-width: 40rem;
 
     &:hover {
         box-shadow:  ${props => props.theme.text} 0px 5px 15px;
