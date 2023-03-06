@@ -14,12 +14,26 @@ export const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 850px) {
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.2rem;
+    }
 `
 
 export const Title = styled.h1`
     font-size: 6.4rem;
     color: ${props => props.theme.text};
     font-weight: 700;
+
+    @media (max-width: 415px) {
+        font-size: 4.8rem;
+    }
+
+    @media (max-width: 335px) {
+        font-size: 4rem;
+    }
 `
 
 export const Menu = styled.nav`
@@ -42,5 +56,14 @@ export const Nav = styled.button`
     &:hover {
         scale: var(--scale);
         border-bottom: 1px solid ${props => props.theme.text};
+    }
+
+    @media (max-width: 470px) {
+        font-size: 2.4rem;
+    }
+
+    @media (max-width: 415px) {
+        font-size: 1.8rem;
+        padding: 0;
     }
 `

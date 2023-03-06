@@ -7,6 +7,11 @@ export const Wrapper = styled.section`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 2.4rem;
+
+    @media (max-width: 600px) {
+        flex-direction: column-reverse;
+    }
 `
 
 export const TextWrapper = styled.div`
@@ -14,8 +19,7 @@ export const TextWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 49rem;
-    height: 20rem;
+    max-width: 50rem;
     color: ${props => props.theme.text};
 `
 
@@ -27,11 +31,19 @@ export const TitleBig = styled.h2`
 
 export const TitleSmall = styled.h2`
     font-size: 3.2rem;
+
+    @media (max-width: 400px) {
+        font-size: 2.4rem;
+    }
 `
 
 export const Content = styled.p`
     font-size: 2.4rem;
     text-align: justify;
+
+    @media (max-width: 400px) {
+        font-size: 1.8rem;
+    }
 `
 
 export const ImageBig = styled.img`
