@@ -27,6 +27,14 @@ export const TitleBig = styled.h2`
     font-size: 4.8rem;
     text-align: center;
     margin-bottom: 4rem;
+
+    @media (max-width: 855px) {
+        font-size: 4rem;
+    }
+
+    @media (max-width: 740px) {
+        font-size: 3.6rem;
+    }
 `
 
 export const TitleSmall = styled.h2`
@@ -49,7 +57,22 @@ export const Content = styled.p`
 export const ImageBig = styled.img`
     width: 35rem;
     height: 35rem;
-    border-radius: 40rem;
+    border-radius: 100%;
+
+    @media (max-width: 1000px) {
+        width: 25rem;
+        height: 25rem;
+    }
+
+    @media (max-width: 950px) {
+        width: 20rem;
+        height: auto;
+    }
+
+    @media (max-width: 600px) {
+        width: 20rem;
+        height: 20rem;
+    }
 `
 
 export const ImageSmall = styled.img`

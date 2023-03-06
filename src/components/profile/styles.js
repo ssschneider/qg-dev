@@ -16,12 +16,21 @@ export const Wrapper = styled.div`
         border: 1px solid ${props => props.theme.text};
         box-shadow:  ${props => props.theme.text} 0px 0px 2px;
     }
+
+    @media (max-width: 415px) {
+        padding: .8rem .4rem;
+    }
 `
 
 export const Image = styled.img`
     width: 35rem;
     height: 35rem;
-    border-radius: 35rem;
+    border-radius: 100%;
+
+    @media (max-width: 415px) {
+        width: 28rem;
+        height: 28rem;
+    }
 `
 
 export const TextSection = styled.div`
@@ -44,4 +53,8 @@ export const Role = styled.h5`
 export const About = styled.p`
     font-size: 2.4rem;
     margin-top: 1.8rem;
+
+    @media (max-width: 415px) {
+        font-size: 1.8rem;
+    }
 `
