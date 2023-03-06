@@ -31,4 +31,9 @@ export const Btn = styled.button`
         scale: 1.1;
         animation: none;
     }
+
+    @media (max-width: 400px) {
+        font-size: 1.8rem;
+        padding: 1.2rem 2.4rem;
+    }
 `
