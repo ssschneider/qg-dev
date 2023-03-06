@@ -8,7 +8,7 @@ export const Wrapper = styled.section`
     border-radius: .8rem;
     padding: 2.4rem 3.2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     transition: var(--transition); 
     gap: 2.4rem;
